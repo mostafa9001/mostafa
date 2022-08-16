@@ -64,6 +64,7 @@ class MainActivity : AppCompatActivity() {
                         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
                         startActivity(intent)
                         finish()
+                        //
                     } else {
                       val message= task.exception!!.toString()
                       Toast.makeText(this,"java عمت فارس: $message",Toast.LENGTH_SHORT).show()
